@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Peças artesanais de argila feitas com carinho.">
+  <title>Raízes da Argila | Artesanato</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topo">
+    <a class="logo" href="#inicio">🌿 Raízes da Argila</a>
+    <nav>
+      <a href="#inicio">Início</a>
+      <a href="#produtos">Produtos</a>
+      <a href="#sobre">Nossa história</a>
+      <a href="#contato">Contato</a>
+    </nav>
+    <button class="carrinho" id="abrir-carrinho" aria-label="Abrir carrinho">🛒 <span id="contador">0</span></button>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="hero-texto">
+        <p class="etiqueta">FEITO À MÃO • FEITO COM AMOR</p>
+        <h1>Arte que nasce<br>da <span>terra.</span></h1>
+        <p>Peças de argila únicas, moldadas com calma e carinho para deixar sua casa ainda mais especial.</p>
+        <a class="botao" href="#produtos">Conheça a coleção</a>
+      </div>
+      <div class="hero-imagem" role="img" aria-label="Vasos artesanais de cerâmica em tons terrosos"></div>
+    </section>
+
+    <section class="beneficios">
+      <div><span>✋</span><strong>Feito à mão</strong><small>Cada peça é única</small></div>
+      <div><span>🌱</span><strong>Inspiração natural</strong><small>Cores e formas da terra</small></div>
+      <div><span>🎁</span><strong>Presente especial</strong><small>Para marcar momentos</small></div>
+    </section>
+
+    <section class="produtos secao" id="produtos">
+      <div class="cabecalho-secao">
+        <div><p class="etiqueta">NOSSA LOJINHA</p><h2>Peças com personalidade</h2></div>
+        <p>Descubra objetos artesanais para decorar, presentear e colecionar.</p>
+      </div>
+      <div class="filtros">
+        <button class="filtro ativo" data-categoria="todos">Todos</button>
+        <button class="filtro" data-categoria="vasos">Vasos</button>
+        <button class="filtro" data-categoria="decoracao">Decoração</button>
+        <button class="filtro" data-categoria="utilitarios">Utilitários</button>
+      </div>
+      <div class="grade-produtos" id="lista-produtos"></div>
+    </section>
+
+    <section class="sobre secao" id="sobre">
+      <div class="sobre-foto" role="img" aria-label="Detalhes de peças artesanais feitas à mão"></div>
+      <div>
+        <p class="etiqueta">NOSSA HISTÓRIA</p>
+        <h2>O encanto do que é feito devagar.</h2>
+        <p>A Raízes da Argila nasceu do amor por materiais naturais e pelo trabalho manual. Cada peça é moldada e finalizada artesanalmente, valorizando pequenas imperfeições que tornam cada criação especial.</p>
+        <p>Mais do que objetos, criamos pequenos detalhes para fazer parte da sua história.</p>
+      </div>
+    </section>
+
+    <section class="contato secao" id="contato">
+      <p class="etiqueta">VAMOS CONVERSAR?</p>
+      <h2>Tem alguma dúvida ou pedido especial?</h2>
+      <p>Entre em contato para consultar disponibilidade e personalizações.</p>
+      <a class="botao" href="https://wa.me/5500000000000" target="_blank" rel="noopener">Fale pelo WhatsApp</a>
+      <small>Edite o número do WhatsApp no arquivo index.html antes de publicar.</small>
+    </section>
+  </main>
+
+  <footer><a class="logo" href="#inicio">🌿 Raízes da Argila</a><p>Artesanato feito com afeto. © <span id="ano"></span></p></footer>
+
+  <div class="fundo-modal" id="modal-carrinho" aria-hidden="true">
+    <section class="painel-carrinho" role="dialog" aria-modal="true" aria-labelledby="titulo-carrinho">
+      <button class="fechar" id="fechar-carrinho" aria-label="Fechar carrinho">×</button>
+      <h2 id="titulo-carrinho">Seu carrinho</h2>
+      <div id="itens-carrinho"></div>
+      <div class="total"><strong>Total</strong><strong id="total">R$ 0,00</strong></div>
+      <button class="botao botao-largo" id="finalizar">Finalizar pedido</button>
+      <p class="nota-carrinho">Demonstração de loja: o pedido será preparado para envio pelo WhatsApp.</p>
+    </section>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

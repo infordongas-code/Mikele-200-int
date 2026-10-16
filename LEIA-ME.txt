@@ -1,0 +1,17 @@
+# Raízes da Argila — Loja de artesanato
+
+## Como abrir no VS Code
+1. Extraia o arquivo ZIP.
+2. Abra a pasta `arte_em_argila` no Visual Studio Code.
+3. Abra `index.html` no navegador (ou use a extensão Live Server).
+
+## Arquivos
+- `index.html`: estrutura da página.
+- `style.css`: cores, fontes e layout responsivo.
+- `script.js`: produtos, filtros e carrinho de compras.
+
+## Personalizações importantes
+- No `index.html` e no `script.js`, troque `5500000000000` pelo número do WhatsApp da loja (código do país + DDD + número, somente dígitos).
+- Os produtos, preços, descrições e imagens podem ser alterados no início de `script.js`.
+- As imagens e fontes são carregadas da internet, então precisam de conexão para aparecer corretamente.
+- Este é um modelo demonstrativo: não processa pagamentos nem controla estoque.
